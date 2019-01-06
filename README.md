@@ -26,7 +26,7 @@ To start the Server:
 Point Browser to: `http://localhost:2550` (alter the hostname/port to match your node server), enter a name and play or watch others currently playing - live.
 
 
-Play [here](https://tetrisoncloud.eu-gb.mybluemix.net)
+Play [here](https://multiplayertetris.eu-gb.mybluemix.net/)
 
 
 # How to deploy Tetris on IBM Cloud
