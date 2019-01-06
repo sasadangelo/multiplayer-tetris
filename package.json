@@ -1,24 +1,25 @@
 {
-  "name": "tetris-server",
-  "version": "0.8.1",
-  "description": "Multiplayer Javascript Tetris (node.js, easeljs, angular.js, socket.io, foundation.css) ",
-  "main": "index.js",
-  "dependencies": {
-    "express": "~4.4.3",
-    "socket.io": "~1.0.6",
-    "mongoose": "~3.8.12"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zhongdeliu/tetris.git"
-  },
-  "author": "zhongdeliu@googlemail.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zhongdeliu/tetris/issues"
-  }
+    "name": "multiplayer-tetris",
+    "version": "0.8.2",
+    "description": "Multiplayer Javascript Tetris",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "4.13.x",
+        "cfenv": "1.0.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sasadangelo/multiplayer-tetris.git"
+    },
+    "engines": {
+        "node": "4.2.x"
+    },
+    "author": "zhongdeliu@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sasadangelo/multiplayer-tetris/issues"
+    }
 }

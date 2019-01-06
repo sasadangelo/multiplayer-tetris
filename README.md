@@ -1,34 +1,55 @@
-Tetris
+Multiplayer Tetris
 ======
-
-Multiplayer Javascript Tetris (node.js, easeljs, angular.js, socket.io, foundation.css) 
 
 * Classical Tetris type of game
 * Multiplayer feature
 * Live updates/broadcast of all players playing
 * Highscores
 
-Demo here: http://multi-tetris.herokuapp.com/
+Demo [here](https://tetrisoncloud.eu-gb.mybluemix.net)
 
 Development/Setup
 -----
 Dependencies for the Server (npm)
 ```
+    cd \<work directory\>
+    git clone https://github.com/sasadangelo/multiplayer-tetris.git
+    cd multiplayer-tetris
     npm install
 ```
-Dependencies for the client (hard copied within the repository)
-```
-    src/js/libs
-```
-But you can use bower to fetch a copy of them: `bower install`
 
 To start the Server:
 ```
-    node index.js
+    npm start
 ```
-It starts the express web and the socket server. The express server only delivers the static files from /src to the http route /app.
 
 Point Browser to: `http://localhost:2550` (alter the hostname/port to match your node server), enter a name and play or watch others currently playing - live.
 
 
-Play here: http://multi-tetris.herokuapp.com/
+Play [here](https://tetrisoncloud.eu-gb.mybluemix.net)
+
+
+# How to deploy Tetris on IBM Cloud
+
+In order to show you how to deploy your first application on IBM I cloned this Node.js project from this [repository](https://github.com/zhongdeliu/multiplayer-tetris). It is a Tetris multiplayer game you can run on web. I moved the code in the public folder and added some files required for IBM Cloud integration.
+
+## Instructions to deploy Multiplayer Tetris on IBM Cloud
+
+1. Create an account on [IBM Cloud](https://www.ibm.com/cloud/). For demo purpose you can use the *Lite* pricing model that  
+   allow you to work for free. The limit is that the application will be removed after 10 days on development inactivity. On 
+   *Lite* pricing model you cannot choice a region different by the one associated to the default space of your account.  
+2. Use "MultiplayerTetris" as application name, "multiplayertetris" as host name. Domain, region, organization and space are set by 
+   default. Press the Create button.
+3. Download and install IBM Cloud CLI as explained [here](https://cloud.ibm.com/docs/cli/index.html#overview).
+4. cd \<work directory\>
+5. git clone https://github.com/sasadangelo/multiplayer-tetris.git
+6. cd \<work directory\>/multiplayer-tetris
+7. bluemix api https://api.<region\>.bluemix.net
+
+   where \<region\> is:
+   - eu-gb, for London;
+       
+8. bluemix login -u \<your email\> -o \<organization\> -s \<space\>       
+9. bluemix app push MultiplayerTetris
+
+You can see the MultiplayerTetris demo [here](https://multiplayertetris.eu-gb.mybluemix.net).
