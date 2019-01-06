@@ -23,7 +23,7 @@ To start the Server:
     npm start
 ```
 
-Point Browser to: `http://localhost:2550` (alter the hostname/port to match your node server), enter a name and play or watch others currently playing - live.
+Point Browser to: `http://localhost:6003` (when server starts it shows the exact URL to put in the browser address bar), enter a name and play or watch others currently playing - live.
 
 
 Play [here](https://multiplayertetris.eu-gb.mybluemix.net/)
