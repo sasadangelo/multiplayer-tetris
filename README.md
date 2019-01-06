@@ -6,7 +6,7 @@ Multiplayer Tetris
 * Live updates/broadcast of all players playing
 * Highscores
 
-Demo [here](https://tetrisoncloud.eu-gb.mybluemix.net)
+Demo [here](https://multiplayertetris.eu-gb.mybluemix.net/)
 
 Development/Setup
 -----
@@ -52,4 +52,4 @@ In order to show you how to deploy your first application on IBM I cloned this N
 8. bluemix login -u \<your email\> -o \<organization\> -s \<space\>       
 9. bluemix app push MultiplayerTetris
 
-You can see the MultiplayerTetris demo [here](https://multiplayertetris.eu-gb.mybluemix.net).
+You can see the MultiplayerTetris demo [here](https://multiplayertetris.eu-gb.mybluemix.net/).
