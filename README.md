@@ -47,7 +47,11 @@ In order to show you how to deploy your first application on IBM I cloned this N
 7. bluemix api https://api.<region\>.bluemix.net
 
    where \<region\> is:
+   - ng, for Dallas;
    - eu-gb, for London;
+   - eu-de, for Frankfurt;
+   - au-syd, for Sydney;
+   - us-east, for Washington;
        
 8. bluemix login -u \<your email\> -o \<organization\> -s \<space\>       
 9. bluemix app push MultiplayerTetris
